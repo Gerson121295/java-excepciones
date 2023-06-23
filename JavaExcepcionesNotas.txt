@@ -59,12 +59,35 @@ private static void metodo2() {
 }
 
 
+      //Solo podemos hacer throw de objetos que son excepciones ya que extendienden o heredan de throwable
+   		
+			Throwable
+			/	 \
+		exception	 errores
+		      |			\
+	   	   RuntimeException    StackOverflowError
+		  /	\	  \
+ArithmeticException   MiException  NullPointerException
+
+Exception: Son el tipo de errores que retornamos los que programamos sobre la JVM
+los que programamos hacemos features sobre la JVM.
+Error: los errores son el tipo de errores retornados, por los que programan la JVM
+
+Creamos una exception que extiende de exception
+
+				Throwable
+				/	 \
+			exception	 errores
+			/	\		\
+	 RuntimeException    	 \		StackOverflowError
+	 /	      \	  	MiException
+ArithmeticException    \
+			\
+		NullPointerException
 
 
-
-
-
-
+En RuntimeException: Puede ser que si o no que lanze la excepcion, 
+En Exception: Le digo el va a lanzar esa Exception.
 
 
 

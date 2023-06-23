@@ -1,21 +1,37 @@
 package java_pila_ejecucion;
 
 public class Flujo {
-
+/*//Extendiendo la excepcion de RuntimeException
     public static void main(String[] args){
         System.out.println("Inicio de main");
         metodo1();
         System.out.println("Fin de main");
     }
+    */
+//Extendiendo la excepcion de Exception
+public static void main(String[] args){
+    System.out.println("Inicio de main");
+    try {
+        metodo1();
+    }catch (MiException e){
+        e.printStackTrace();
+    }
+    System.out.println("Fin de main");
+}
 
-    public static void metodo1(){
+    public static void metodo1() throws MiException{ //forma 2: agregar: "throws MiException" en la funcion es definido para evitar hacer el try y catch
         System.out.println("Inicio de metodo1");
-        metodo2();
+        //Uso de nuestra exception creada
+       // try{
+            metodo2();
+        //}catch (MiException me){
+           // me.printStackTrace();
+        // }
         System.out.println("Fin de metodo1");
     }
 
-    //Crear nuestro propia excepcion en el metodo2
-
+  /*
+    //Crear nuestro propia excepcion en el metodo2 - Extiende de RuntimeException
     public static void metodo2() {
         System.out.println("Inicio de metodo2");
         //Forma 1: crear y Lanzar nuestra propia excepcion
@@ -26,9 +42,21 @@ public class Flujo {
         //Forma 2: crear(instanciar) y Lanzar nuestra propia excepcion
         //throw new ArithmeticException(); //forma de definir y lazar la excepcion
 
-        //Solo podemos hacer throw de objetos que son excepciones
-        Cuenta cuenta = new Cuenta();
-        throw new ArithmeticException();
+        //Solo podemos hacer throw de objetos que son excepciones ya que extendienden o heredan de throwable
+
+        //Se lanza nuestra exception que se creó
+        throw new MiException("Mi excepcion fue lanzada");
+
+        //Error StackOverflow cuando la pila se llena
+        //metodo2(); //ciclo infinito metodo2(); llama al metodo2(); y asi.
+
+    }
+*/
+
+    //Crear nuestro propia excepcion en el metodo2 - Extiende de Exception
+    public static void metodo2() throws  MiException{
+        System.out.println("Inicio de metodo2");
+        throw new MiException("My exception was thrown");
     }
 
     /*
