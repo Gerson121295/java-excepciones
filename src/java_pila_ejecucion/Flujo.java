@@ -23,3 +23,20 @@ public class Flujo {
     }
 
 }
+
+//-------- Ejemplo de la pila de ejecucion de este programa ------
+//--------------------------------------------
+//        |        |         |       |       |
+//        |        |         |       |       |
+//        |        | metodo2 |       |       |
+//        |metodo1 | metodo1 |metodo1|       |
+// main   |  main  | main    | main  |  main |
+//--------------------------------------------
+
+//Se ejecuta main luego main llama al metodo1 luego metodo1 llama
+//al metodo2 este se ejecuta luego regresa a terminar a ejecutar el
+//metodo1 luego regresa a terminar de ejecutar el metodo main.
+//hasta dejar vacia la pila.
+
+
+
