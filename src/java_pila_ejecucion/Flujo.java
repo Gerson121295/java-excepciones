@@ -14,6 +14,19 @@ public class Flujo {
         System.out.println("Fin de metodo1");
     }
 
+    //Crear nuestro propia excepcion en el metodo2
+
+
+    public static void metodo2() {
+        System.out.println("Inicio de metodo2");
+        ArithmeticException ae = new ArithmeticException();
+
+        System.out.println("Fin metodo2");
+        }
+
+
+
+    /*
     public static void metodo2(){
         System.out.println("Inicio de metodo2");
         for (int i = 1; i<=5; i++){
@@ -51,9 +64,13 @@ public class Flujo {
              }
              */
 
+/*
         }
         System.out.println("Fin de metodo2");
     }
+
+    */
+
 
 }
 

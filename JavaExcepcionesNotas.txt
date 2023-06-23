@@ -22,6 +22,31 @@ sabe qué otros aún deben ejecutarse, que son precisamente los métodos que 
 La excepciones son objetos que tiene nombre, mensaje.
  Los errores que queremos controlar nos ayudará a crear las excepciones.
 
+Las excepciones en Java:
+- Las excepciones no controladas caen en la pila de ejecución en busca de alguien 
+que pueda manejarlas.
+- Toda excepción en Java tiene un nombre que la idenfica. Este enfoque hace que 
+sea más fácil de entender que usar números mágicos (códigos de error) como 15, 7012 o 16.
+
+El código anterior a través de Multi- Catch:
+try {
+    System.out.println(1 / 0);
+} catch (ArithmeticException | NullPointerException ex) { 
+    ex.printStackTrace();
+}
+A través de un | (pipe) en la cláusula catch, podemos capturar más de una excepción.
+Con eso, podemos tener un solo bloque para manejar una o más excepciones.
+
+
+Si no se maneja, la excepción cambia el flujo de ejecución del programa.
+Si no se trata, la excepción cambia el flujo de ejecución del programa y finalizándolo abruptamente.
+
+Para manejar la excepción, use el bloque try y catch.
+Con el bloque try y catch, manejamos una excepción que puede ocurrir mientras 
+nuestro programa se está ejecutando, tratándolo de antemano con un código específico.
+
+
+
 
 
 
