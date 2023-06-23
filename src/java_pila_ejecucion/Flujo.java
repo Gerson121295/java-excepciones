@@ -21,10 +21,13 @@ public class Flujo {
 
             //try - Palabra reservada para controlar errores, try no puede existir sin el catch
             try { //try intenta esto, si no funciona atrapa el resultado (catch).
-//                int num = 0;
-//                int resultado = i / num;
-//                System.out.println(resultado);
 
+                //error de divicion es lanzado cuando i=3
+                if(i == 3) {
+                    int num = 0;
+                    int resultado = i / num;
+                    System.out.println(resultado);
+                }
                 //otro error NullPointerException
                 String test = null;
                 System.out.println(test.toString());
@@ -44,7 +47,7 @@ public class Flujo {
             }catch (ArithmeticException | NullPointerException exception){ //catch - Atrapa el error. ArithmeticException(es un objeto) por lo que lo declaro como una variable llamada exception. //Aqui explota la bomba.
                 System.out.println("Atrapo el Arithmetic");
                 System.out.println(exception.getMessage());//getMessage es un metodo que mostrará el mensaje. //Aqui se define como se trata la bomba.
-                exception.printStackTrace();//Imprime por donde paso
+                exception.printStackTrace();//Imprime por donde paso la pila
              }
              */
 
