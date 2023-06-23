@@ -16,15 +16,20 @@ public class Flujo {
 
     //Crear nuestro propia excepcion en el metodo2
 
-
     public static void metodo2() {
         System.out.println("Inicio de metodo2");
-        ArithmeticException ae = new ArithmeticException();
+        //Forma 1: crear y Lanzar nuestra propia excepcion
+       // ArithmeticException ae = new ArithmeticException();
+        //throw ae; //throw - Lanza la excepcion: lanza la bomba
+        //Abajo de throw no debe haber mas codigo debido a que no sera ejecutado.
 
-        System.out.println("Fin metodo2");
-        }
+        //Forma 2: crear y Lanzar nuestra propia excepcion
+        //throw new ArithmeticException(); //forma de definir y lazar la excepcion
 
-
+        //Solo podemos hacer throw de objetos que son excepciones
+        Cuenta cuenta = new Cuenta();
+        throw new ArithmeticException();
+    }
 
     /*
     public static void metodo2(){

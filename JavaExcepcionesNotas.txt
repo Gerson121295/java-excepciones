@@ -45,6 +45,9 @@ Para manejar la excepción, use el bloque try y catch.
 Con el bloque try y catch, manejamos una excepción que puede ocurrir mientras 
 nuestro programa se está ejecutando, tratándolo de antemano con un código específico.
 
+throw ae; //throw - Lanza la excepcion: lanza la bomba
+//abajo del throw no debe haber lineas de codigo porque no sera ejecutadas.
+//Solo podemos hacer throw de objetos que son excepciones
 
 
 
