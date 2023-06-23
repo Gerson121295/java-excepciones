@@ -49,6 +49,17 @@ throw ae; //throw - Lanza la excepcion: lanza la bomba
 //abajo del throw no debe haber lineas de codigo porque no sera ejecutadas.
 //Solo podemos hacer throw de objetos que son excepciones
 
+No es suficiente crear una instancia de la excepción, es necesario lanzarlo a 
+través del throw.
+
+private static void metodo2() {
+    System.out.println("Inicio del metodo2"); 
+    ArithmeticException exception = new ArithmeticException();
+    throw exception;
+}
+
+
+
 
 
 
