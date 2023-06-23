@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d54cf58-98f0-4a53-bc67-ca7a2589469a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaExcepcionesNotas.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaExcepcionesNotas.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_pila_ejecucion/Flujo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_pila_ejecucion/Flujo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,10 +37,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "Console"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.TestCuenta">
     <configuration name="Flujo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="java_pila_ejecucion.Flujo" />
       <module name="javaExcepciones" />
@@ -52,8 +55,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestCuenta" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="byteBankHeredado.TestCuenta" />
+      <module name="javaExcepciones" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="byteBankHeredado.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestCuenta" />
         <item itemvalue="Application.Flujo" />
       </list>
     </recent_temporary>

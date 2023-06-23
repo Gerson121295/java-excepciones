@@ -3,4 +3,41 @@
 		**** Java Excepciones *****
 https://github.com/alura-es-cursos/java-herencia-polimorfismo/tree/clase-7
 
+¿Por qué la JVM usa un Stack?
+- Para saber cuál método está siendo ejecutado.
+Una pila de Java es parte de la JVM y almacena los métodos que se están ejecutando. 
+Además del bloque de código, la pila almacena las variables y referencias de ese 
+bloque. Entonces, la JVM organiza la ejecución y sabe exactamente qué método se 
+está ejecutando, que es siempre el método en la parte superior de la pila. 
+La JVM también sabe qué otros aún deben ejecutarse, que son precisamente los 
+métodos que continúan.
+
+-Para organizar la ejecución de los métodos.
+Una pila de Java es parte de la JVM y almacena los métodos que se están ejecutando. 
+Además del bloque de código, la pila almacena las variables y referencias de ese 
+bloque. Entonces, la JVM organiza la ejecución y sabe exactamente qué método se está
+ejecutando, que es siempre el método en la parte superior de la pila. La JVM también
+sabe qué otros aún deben ejecutarse, que son precisamente los métodos que continúan.
+
+La excepciones son objetos que tiene nombre, mensaje.
+ Los errores que queremos controlar nos ayudará a crear las excepciones.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
