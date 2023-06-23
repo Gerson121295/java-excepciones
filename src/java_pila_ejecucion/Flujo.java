@@ -18,6 +18,36 @@ public class Flujo {
         System.out.println("Inicio de metodo2");
         for (int i = 1; i<=5; i++){
             System.out.println(i);
+
+            //try - Palabra reservada para controlar errores, try no puede existir sin el catch
+            try { //try intenta esto, si no funciona atrapa el resultado (catch).
+//                int num = 0;
+//                int resultado = i / num;
+//                System.out.println(resultado);
+
+                //otro error NullPointerException
+                String test = null;
+                System.out.println(test.toString());
+                //-----
+            }catch (ArithmeticException exception){ //catch - Atrapa el error. ArithmeticException(es un objeto) por lo que lo declaro como una variable llamada exception. //Aqui explota la bomba.
+                System.out.println("Atrapo el Arithmetic");
+                System.out.println(exception.getMessage());//getMessage es un metodo que mostrará el mensaje. //Aqui se define como se trata la bomba.
+                exception.printStackTrace();//Imprime por donde paso
+            }catch(NullPointerException exception) { //catch - Atrapa el error. NullPointerException(es un objeto) por lo que lo declaro como una variable llamada exception. //Aqui explota la bomba. Atrapa otro error
+                System.out.println("Atrapo NullPointerException");
+                System.out.println(exception.getMessage());//getMessage es un metodo que mostrará el mensaje. //Aqui se define como se trata la bomba.
+                exception.printStackTrace();
+            }
+
+            //Ejemplo de atrapar 2 errores en un mismo catch
+            /*
+            }catch (ArithmeticException | NullPointerException exception){ //catch - Atrapa el error. ArithmeticException(es un objeto) por lo que lo declaro como una variable llamada exception. //Aqui explota la bomba.
+                System.out.println("Atrapo el Arithmetic");
+                System.out.println(exception.getMessage());//getMessage es un metodo que mostrará el mensaje. //Aqui se define como se trata la bomba.
+                exception.printStackTrace();//Imprime por donde paso
+             }
+             */
+
         }
         System.out.println("Fin de metodo2");
     }

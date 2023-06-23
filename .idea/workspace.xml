@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3d54cf58-98f0-4a53-bc67-ca7a2589469a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaExcepcionesNotas.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaExcepcionesNotas.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java_pila_ejecucion/Flujo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_pila_ejecucion/Flujo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +40,7 @@
     "settings.editor.selected.configurable": "Console"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.TestCuenta">
+  <component name="RunManager" selected="Application.Flujo">
     <configuration name="Flujo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="java_pila_ejecucion.Flujo" />
       <module name="javaExcepciones" />
@@ -70,8 +69,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestCuenta" />
         <item itemvalue="Application.Flujo" />
+        <item itemvalue="Application.TestCuenta" />
       </list>
     </recent_temporary>
   </component>
