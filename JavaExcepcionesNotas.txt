@@ -77,17 +77,29 @@ Creamos una exception que extiende de exception
 
 				Throwable
 				/	 \
-			exception	 errores
-			/	\		\
-	 RuntimeException    	 \		StackOverflowError
-	 /	      \	  	MiException
-ArithmeticException    \
-			\
-		NullPointerException
+			exception	  errores
+		       /			 \
+	    MiException |      RuntimeException    StackOverflowError
+	 		|      	/      	       \	  	
+		        |   ArithmeticException \
+			|		         \
+			|			NullPointerException
+			|
+	CHECKED		| 	UNCHECKED	
+	(Verificado) 	|	(No Verificado)
+
+En RuntimeException: Puede ser que si o no, que lanze la excepcion, Excepciones no Verificada por el compilador.
+En Exception: Le digo el va a lanzar esa Exception. Excepcion Verificada al momento de compilador.
+
+La excepcion UNCHECKED(No verificado): estas excepciones no son verificadas por el
+compilador, puede que lance o no, el compilador no va a alertar por si acaso el lanzo o no
+el no hará el trabajo.
+La excepcion CHECKED(verificado) el compilador si nos va a obligar a tratar, esa
+excepcion si es lanzada en alguna parte del codigo, si no, no va a compilar.Nos aparecera
+un error.
 
 
-En RuntimeException: Puede ser que si o no que lanze la excepcion, 
-En Exception: Le digo el va a lanzar esa Exception.
+
 
 
 
