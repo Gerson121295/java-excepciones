@@ -13,8 +13,9 @@ public static void main(String[] args){
     System.out.println("Inicio de main");
     try {
         metodo1();
-    }catch (MiException e){
-        e.printStackTrace();
+    //}catch (MiException | ArithmeticException e){ // En el catch: Capturo 2 excepciones.
+    }catch (Exception e){ //Usando polimorfismo: Exception capturará cualquier excepcion que ocurra en el codigo. Ya que todo extiende de Exception.
+        e.printStackTrace(); //Es mejor capturar nuestra Exception ya que asi sabemos que error estamos tratando.
     }
     System.out.println("Fin de main");
 }
@@ -56,6 +57,10 @@ public static void main(String[] args){
     //Crear nuestro propia excepcion en el metodo2 - Extiende de Exception
     public static void metodo2() throws  MiException{
         System.out.println("Inicio de metodo2");
+//        int a = 50/0; //Dará un error lanzará un ArithmeticException //por lo que en el main lo atrapo dentro del try agrego 2 catch
+//       //El siguiente generará un error, lanzará un NullPointerException por lo que tambien se debe atrapar
+//        Cuenta c = null;
+//        c.deposita();
         throw new MiException("My exception was thrown");
     }
 
