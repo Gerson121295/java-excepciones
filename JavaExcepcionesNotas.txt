@@ -162,6 +162,9 @@ Aplicaciones distribuidas es un conjunto de aplicaciones que interactuan entre s
 para lograr satisfacer las necesidades de negocios de una empresa.
 
 //Toda conexion que abrimos debemos cerrarla.
+finally { //De una u otra forma. Hay o no halla error se ejecuta el metodo.
+
+
 
 
 
