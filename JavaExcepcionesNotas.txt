@@ -223,6 +223,34 @@ try {
 //anteriores.
 //Try no puede vivir solo necesita de  un catch o un finally o puede tener ambos.
 
+¿Qué se garantiza cuando usamos try-with-resources?
+try(Conexion con = new Conexion()) {
+    con.leerDatos();
+}
+-El recurso necesita implementar el método close().
+se crea automáticamente un bloque finally. En él se llama al método close() del recurso.
+-El bloque finally se crea automáticamente.
+se crea automáticamente un bloque finally. En él se llama al método close() del recurso.
+
+Las palabras claves relacionadas con las excepciones son las siguientes:
+
+1) throw
+2) finally
+3) catch
+4) throws
+5) try
+
+En esta clase aprendimos:
+
+que existe un bloque finally, útil para cerrar recursos (como conexión);
+cuando hay un bloque finally, el bloque de catch es opcional;
+que el bloque * finally * se ejecuta siempre, sin o con excepción;
+cómo utilizar try-with-resources.
+
+
+
+
+
 
 
 
