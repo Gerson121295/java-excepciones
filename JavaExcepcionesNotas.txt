@@ -128,6 +128,15 @@ De esta manera, se torna un unchecked y el compilador no obliga más a "tomar u
 
 Las exeption nos sirven para el control de errores mas detallado. 
 
+Para hacer tratamiento de exception de una exception tipo Exception: realizamos.
+agregar en la firma del metodo el:    throws SaldoInsuficienteException
+o envolver donde se llama al metodo que tiene la excepcion por medio de try y catch.
+Nota: Cuando es un metodo main no devemos agregarle la firma throws SaldoInsuficienteException si no que
+devemos envolver el metodo en un try catch.
+
+
+
+
 
 
 

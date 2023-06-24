@@ -69,7 +69,8 @@ public abstract class Cuenta {
         }
     }
 
-    public boolean transferir(double valor, Cuenta destino) {
+    //Transfiere llama al metodo saca que tiene una exeption tipo Exeption por lo que transfiere se ve afectado por lo que se le agrega al metodo throws SaldoInsuficienteException
+    public boolean transferir(double valor, Cuenta destino) throws SaldoInsuficienteException { //agreado: throws SaldoInsuficienteException otra opcion seria agregar un try catch al metodo saca
         if (this.saldo >= valor) {
             //this.saldo = this.saldo - valor;
             this.saca(valor);
@@ -96,12 +97,20 @@ public abstract class Cuenta {
         }
     }
 */
-
-    //Nuevo Metodo saca implentando exception
+/*
+    //Nuevo Metodo saca implentando exception: RuntimeException
     public void saca(double valor){
         if(this.saldo < valor) { //excepciones o validacion van al inicio del metodo.
             throw new SaldoInsuficienteException("No tienes saldo");
      }
+        this.saldo -= valor; //Si sacas dinero te resto el valor de tu cuenta, sino te devuelvo un exception.
+    }
+*/
+    //Nuevo Metodo saca implentando exception: Exception
+    public void saca(double valor) throws SaldoInsuficienteException {
+        if(this.saldo < valor) { //excepciones o validacion van al inicio del metodo.
+            throw new SaldoInsuficienteException("No tienes saldo");
+        }
         this.saldo -= valor; //Si sacas dinero te resto el valor de tu cuenta, sino te devuelvo un exception.
     }
 

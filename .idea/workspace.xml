@@ -9,6 +9,8 @@
       <change beforePath="$PROJECT_DIR$/JavaExcepcionesNotas.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaExcepcionesNotas.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/byteBankHeredado/Cuenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/byteBankHeredado/Cuenta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/byteBankHeredado/CuentaCorriente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/byteBankHeredado/CuentaCorriente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/byteBankHeredado/SaldoInsuficienteException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/byteBankHeredado/SaldoInsuficienteException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/byteBankHeredado/TestCuenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/byteBankHeredado/TestCuenta.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

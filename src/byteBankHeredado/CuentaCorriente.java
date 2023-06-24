@@ -13,7 +13,7 @@ public class CuentaCorriente extends Cuenta {
     }
 
     @Override //metodo de la clase padre esta siendo sobreescrito en la hija
-        public void saca(double valor) {
+        public void saca(double valor) throws SaldoInsuficienteException { //Se agregó: throws SaldoInsuficienteException debido a que usa el metodo sace y este metodo tiene una exception tipo Exception.
             double comision = 0.2;
              super.saca(valor + comision);
         }

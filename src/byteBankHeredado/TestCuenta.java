@@ -6,7 +6,16 @@ public class TestCuenta {
         CuentaAhorros ca = new CuentaAhorros(2,3);
 
         cc.depositar(2000);
-        cc.transferir(1000, ca);
+
+        //Se agregó: try catch debido a que utiliza el metodo saca y este tiene una exception
+        //no se agregó throws SaldoInsuficienteException en la firma del metodo debido a que no es buena practica agregarlo al metodo main.
+
+        try {
+            cc.transferir(1000, ca);
+        } catch (SaldoInsuficienteException e) {
+            throw new RuntimeException(e);
+        }
+
 
         System.out.println(cc.getSaldo());
         System.out.println(ca.getSaldo());
