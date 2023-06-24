@@ -156,6 +156,17 @@ throw new SacarException("Valor invalido: Saldo: " + this.saldo + ", Valor: " + 
 
 
 
+--- 06 - Finally y try with resources  ---
+
+Aplicaciones distribuidas es un conjunto de aplicaciones que interactuan entre si
+para lograr satisfacer las necesidades de negocios de una empresa.
+
+//Toda conexion que abrimos debemos cerrarla.
+
+
+
+
+
 
 
 
