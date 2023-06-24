@@ -13,11 +13,15 @@ public abstract class Cuenta {
     //static indica que esta variable no sera de la instancia si no de si no de la clase
     private static int total=0; //para contar cuantas cuentas hay creadas
 
+    public Cuenta(){
+
+    }
 
     public Cuenta (int agencia, int numero){
         this.agencia = agencia;
         this.numero = numero;
-        System.out.println("Cuenta No. "+ total + " creadas");
+        //System.out.println("Cuenta No. "+ total + " creadas");
+        System.out.println("Estoy creando una cuenta "+ this.numero);
         Cuenta.total ++;
     }
 
@@ -81,6 +85,8 @@ public abstract class Cuenta {
         //return false;
     }
 
+
+    /*
     public boolean saca(double valor){
         if(this.saldo >= valor) {
             this.saldo -= valor;
@@ -88,6 +94,15 @@ public abstract class Cuenta {
         }else {
             return false;
         }
+    }
+*/
+
+    //Nuevo Metodo saca implentando exception
+    public void saca(double valor){
+        if(this.saldo < valor) { //excepciones o validacion van al inicio del metodo.
+            throw new SaldoInsuficienteException("No tienes saldo");
+     }
+        this.saldo -= valor; //Si sacas dinero te resto el valor de tu cuenta, sino te devuelvo un exception.
     }
 
 

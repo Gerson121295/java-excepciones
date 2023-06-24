@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3d54cf58-98f0-4a53-bc67-ca7a2589469a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java_pila_ejecucion/Flujo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_pila_ejecucion/Flujo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaExcepcionesNotas.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaExcepcionesNotas.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/byteBankHeredado/Cuenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/byteBankHeredado/Cuenta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/byteBankHeredado/CuentaCorriente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/byteBankHeredado/CuentaCorriente.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +42,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;Console&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Flujo">
+  <component name="RunManager" selected="Application.TestCuentaExceptionSaldo">
     <configuration name="Flujo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="java_pila_ejecucion.Flujo" />
       <module name="javaExcepciones" />
@@ -67,8 +69,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestCuentaExceptionSaldo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="byteBankHeredado.TestCuentaExceptionSaldo" />
+      <module name="javaExcepciones" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="byteBankHeredado.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestCuentaExceptionSaldo" />
         <item itemvalue="Application.Flujo" />
         <item itemvalue="Application.TestCuenta" />
       </list>

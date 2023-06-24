@@ -123,6 +123,10 @@ crean al pertenecer a una jerarquía que no pasa por RuntimeException. Los segu
 son unchecked y se crean como descendientes de RuntimeException.
 
 
+En la clase ConexionException, basta extender la clase RuntimeExeption en lugar de Exception.
+De esta manera, se torna un unchecked y el compilador no obliga más a "tomar una acción”.
+
+Las exeption nos sirven para el control de errores mas detallado. 
 
 
 
