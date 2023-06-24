@@ -135,6 +135,26 @@ Nota: Cuando es un metodo main no devemos agregarle la firma throws SaldoInsufic
 devemos envolver el metodo en un try catch.
 
 
+¿Cómo pueden las excepciones ayudar a mejorar el código de su programa?
+
+1) Las excepciones tienen un nombre y, si ese nombre es expresivo, documenta el 
+problema que está ocurriendo.
+
+2) Las excepciones pueden tener un mensaje, es decir, el problema y el estado de 
+las variables se pueden describir en el mensaje.
+
+3) Las excepciones cambian el flujo de ejecución, es decir, impiden que el problema 
+siga el flujo "normal" cuando ocurre algo excepcional.
+
+4) Se pueden manejar excepciones, es decir, podemos volver a la ejecución "normal" 
+si se resuelve el "problema".
+
+
+podemos usar el mensaje de excepción, como ya hicimos en el curso:
+
+throw new SacarException("Valor invalido: Saldo: " + this.saldo + ", Valor: " + valor);
+
+
 
 
 

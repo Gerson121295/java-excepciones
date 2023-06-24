@@ -19,5 +19,9 @@ public class TestCuentaExceptionSaldo {
             // e.printStackTrace();
         }
 
+      /*  podemos usar el mensaje de excepción, como ya hicimos en el curso:
+        throw new SacarException("Valor invalido: Saldo: " + this.saldo + ", Valor: " + valor);
+        */
+
     }
 }
