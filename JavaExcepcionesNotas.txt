@@ -168,6 +168,62 @@ finally { //De una u otra forma. Hay o no halla error se ejecuta el metodo.
 //Finally es opcional no es obligatorio y solo puede haber un finally. try si debe llevar obligado un catch o un finally 
 try no puede ir solo.
 
+declaraciones sobre el bloque finally:
+
+1) El bloque finally es opcional cuando hay bloque catch.
+
+2) El bloque finally siempre será ejecutado (sin o con excepción).
+
+4) El bloque finally es normalmente utilizado para cerrar un recurso como conexión 
+o transacción.
+
+
+
+
+El equipo de desarrolladores decidió crear dos excepciones para trabajar con cuentas:
+
+public class SacarException extends RuntimeException {}
+public class DepositarException extends RuntimeException { }
+
+Conociendo las dos excepciones, es necesario realizar un tratamiento. 
+¿Cuáles de las opciones son válidas (que compilan)?
+
+- Un tratamiento con try y multi-catch.
+try {
+
+} catch(SacarException | DepositarException ex) {
+
+} 
+
+- El tratamiento el bloque de catch es opcional cuando existe el bloque finally.
+
+try {
+
+} finally {
+
+}
+
+- Un tratamiento con try con dos bloques de catch (clásicos) y el bloque Finally.
+
+try {
+
+} catch(SacaException ex) {
+
+} catch(DepositarException ex) {
+
+} finally {
+
+}
+
+
+//Cual usar: Si necesita que el objeto Conexion haga algo al momento de dejar de existir
+//cuando sea cerrado, cuando ya no se utilizará mas, si fuera un recurso que necesito asegurarme
+// de cerrarlo despues puedo implementar la interfaz AutoCloseable y el cerrará ese recurso.
+//Y va a ejecutar todo normalmente. Pero si mi objeto no implementa AutoCloseable utilizar las
+//anteriores.
+//Try no puede vivir solo necesita de  un catch o un finally o puede tener ambos.
+
+
 
 
 
