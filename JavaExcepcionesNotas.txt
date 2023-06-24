@@ -94,9 +94,10 @@ En Exception: Le digo el va a lanzar esa Exception. Excepcion Verificada al mome
 La excepcion UNCHECKED(No verificado): estas excepciones no son verificadas por el
 compilador, puede que lance o no, el compilador no va a alertar por si acaso el lanzo o no
 el no hará el trabajo.
+
 La excepcion CHECKED(verificado) el compilador si nos va a obligar a tratar, esa
 excepcion si es lanzada en alguna parte del codigo, si no, no va a compilar.Nos aparecera
-un error.
+un error. Es necessario atrapar la excepcion con el try y catch.
 
 
 Miguel estudió esta clase cuidadosamente y tomó las notas que se encuentran a 
