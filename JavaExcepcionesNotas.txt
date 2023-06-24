@@ -164,6 +164,9 @@ para lograr satisfacer las necesidades de negocios de una empresa.
 //Toda conexion que abrimos debemos cerrarla.
 finally { //De una u otra forma. Hay o no halla error se ejecuta el metodo.
 
+//Toda conexion que abrimos debemos cerrarla. Podemos usar finally para asegurarnos de cerrar la conexion.
+//Finally es opcional no es obligatorio y solo puede haber un finally. try si debe llevar obligado un catch o un finally 
+try no puede ir solo.
 
 
 
